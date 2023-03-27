@@ -19,6 +19,9 @@ public class HomePage extends BasePage {
     @FindBy(css = ".search-form .searchsubmit")
     private WebElementFacade searchButton;
 
+    @FindBy (css = "#menu-item-71 a")
+    private WebElementFacade checkoutButton;
+
 
     public void clickOnAccountbutton(){
         clickOn(accountbutton);
@@ -29,7 +32,9 @@ public class HomePage extends BasePage {
     public void clickSearchButton(){
         clickOn(searchButton);
     }
-
+    public void clickOnCheckoutButton(){
+        clickOn(checkoutButton);
+    }
 
 
 }

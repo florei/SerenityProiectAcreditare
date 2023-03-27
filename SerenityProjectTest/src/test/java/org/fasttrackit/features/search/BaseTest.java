@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.fasttrackit.Utils.Constants;
 import org.fasttrackit.steps.serenity.CartSteps;
+import org.fasttrackit.steps.serenity.CheckoutSteps;
 import org.fasttrackit.steps.serenity.LoginSteps;
 import org.fasttrackit.steps.serenity.SearchSteps;
 import org.junit.Before;
@@ -26,6 +27,9 @@ public class BaseTest {
     protected CartSteps cartSteps;
     @Steps
     protected SearchSteps searchSteps;
+
+    @Steps
+    protected CheckoutSteps checkoutSteps;
 
     @Before
     public void initTests(){

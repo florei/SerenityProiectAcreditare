@@ -5,8 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductPage extends BasePage  {
 
-    @FindBy(css = "[name=add-to-cart]")
+    @FindBy(css = "[type ='submit'][value='26']")
     private WebElementFacade addToCartButton;
+
 
     public void clickAddToCartButton(){
         clickOn(addToCartButton);

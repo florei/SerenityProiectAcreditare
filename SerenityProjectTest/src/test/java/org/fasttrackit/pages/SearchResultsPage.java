@@ -12,10 +12,10 @@ public class SearchResultsPage extends BasePage{
     @FindBy(css = ".products.columns-4 a.collection_title ")
     private List<WebElementFacade> listOfProductNames;
 
-    @FindBy(css = ".products-grid .regular-price")
+    @FindBy(css = ".products.columns-4 .price")
     private List<WebElementFacade> listOfPrices;
 
-    @FindBy(css = ".category-products > .toolbar select[title='Sort By']")
+    @FindBy(css = ".orderby")
     private WebElementFacade sortByDropdown;
 
     public boolean isProductInList(String productName) {
@@ -31,10 +31,10 @@ public class SearchResultsPage extends BasePage{
     }
 
     public void selectPriceFromDropdown() {
-        sortByDropdown.selectByIndex(2);
+        sortByDropdown.selectByIndex(4);
     }
 
-    public boolean isPriceAscending() {
+   public boolean isPriceAscending() {
         int firstPrice = getIntFromPrice(listOfPrices.get(0).getText());
         int secondPrice = getIntFromPrice(listOfPrices.get(listOfPrices.size() - 1).getText());
         return firstPrice <= secondPrice;

@@ -5,8 +5,9 @@ import net.serenitybdd.core.pages.WebElementFacade;
 
 public class CartPage extends BasePage{
 
-    @FindBy(css = ".woocommerce-message")
+    @FindBy(css = "div.woocommerce-message a ")
     private WebElementFacade addedToCartMessage;
+
 
     public boolean wasProductWasAddedToCart(String productName) {
         return addedToCartMessage.getText().equalsIgnoreCase(productName + " was added to your shopping cart.");

@@ -28,8 +28,8 @@ public class LoginSteps extends BaseSteps{
     @Step
     public void userIsLoggedIn(String userName) {
 //        Assert.assertTrue(accountPage.isWelcomeText(userName));
-//        Assert.assertEquals("Hello, " + userName + "!", accountPage.getWelcomeText());
-        accountPage.userIsLoggedIn(userName);
+      Assert.assertEquals("Hello " + userName, accountPage.getWelcomeText());
+  //      accountPage.userIsLoggedIn(userName);
     }
 
 
