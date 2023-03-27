@@ -15,14 +15,14 @@ public class CheckoutTest extends BaseTest {
         checkoutSteps.navigateToCheckoutPage();
         checkoutSteps.typeFirstNameField("Florentina");
         checkoutSteps.typeLastNameField("Alexa");
-        checkoutSteps.typeCountryNameField("Romania");
+        checkoutSteps.selectCountry("Romania");
         checkoutSteps.typeAddressNameField("Aleea Parc");
         checkoutSteps.typeCityNameField("Focsani");
         checkoutSteps.typePostcodeNameField("12546");
         checkoutSteps.typePhoneField("0732587954");
         checkoutSteps.typeEmailCheckoutField("florentina.alxa6@gmail.com");
         checkoutSteps.clickPlaceOrderButton();
-
+// TODO: 3/27/2023  
 
     }
 }

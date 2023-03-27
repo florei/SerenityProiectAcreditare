@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest {
         loginSteps.typeUserEmail(Constants.USER_EMAIL);
         loginSteps.typePassword("123123123123");
         loginSteps.clickLogin();
-//        TODO: FINISH THIS LATER
+
 
     }
 
@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
         loginSteps.typeUserEmail("test");
         loginSteps.typePassword("123");
         loginSteps.clickLogin();
-//        TODO
+
 
     }
 

@@ -19,7 +19,8 @@ public class CheckoutSteps extends BaseSteps{
         checkoutPage.setLastNameField(lastName);
     }
     @Step
-    public void click
+    public void selectCountry (String Country){
+        checkoutPage.selectDropdowValues();
     }
     @Step
     public void typeAddressNameField(String addressName){
